@@ -1,0 +1,20 @@
+/* App.js */
+.main {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Box.js */
+.game-box {
+  border: 2px solid black;
+  width: 400px;
+  height: 400px;
+  margin: 50px 10px 0;
+  text-align: center;
+  
+}
+
+.game-box img {
+  width: 250px;
+}
