@@ -31,7 +31,7 @@ function App() {
     <div>
       <div className='main'>
         <Box title='You' value={userSelector} />
-        {/* <Box title='Computer'  /> */}
+        <Box title='Computer' value={userSelector} />
       </div>
       <div className='main'>
         <button onClick={() => play("scissors")}>가위</button>
