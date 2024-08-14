@@ -20,18 +20,22 @@ const choice = {
 }
 
 function App() {
-  const [userSelector, setUserSelector] = useState(null);
+  // state function : UI 보여주는 함수
+  const [userSelect, setUserSelect] = useState(null);
+ 
 
   const play =(userChoice) => {
-    console.log("userSelector", userChoice)
-    setUserSelector(choice[userChoice])
+    console.log("userChoice", userChoice)
+    setUserSelect(choice[userChoice])
+
     
   }
+
   return (
     <div>
       <div className='main'>
-        <Box title='You' value={userSelector} />
-        <Box title='Computer' value={userSelector} />
+        <Box title='You' value={userSelect} />
+        <Box title='Computer' value={userSelect} />
       </div>
       <div className='main'>
         <button onClick={() => play("scissors")}>가위</button>
